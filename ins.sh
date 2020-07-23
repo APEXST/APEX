@@ -26,4 +26,4 @@ sudo apt-get update
 sudo apt-get upgrade -y
 cd ..
 rm -rf luarocks*
-lua apex-star.lua
+lua akstra.lua
