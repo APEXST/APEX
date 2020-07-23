@@ -49,7 +49,7 @@ memory_free=`awk '/^Mem/ {print $4}' <(free -m)`
 if [ "$memory_free" -le 60 ]; then
 echo -e "${RED}¦
 ¦ CAUTION:${WHITEC} Your RAM size is less than 60MB.
-¦ NOW you can not install the SOURCE TH3BOSS. \n
+¦ NOW you can not install the SOURCE APEXST. \n
 ¦${WHITB}¦ YOUR RAM FREE SIZE IS : ${SMAY}${memory_free}MB${CNIL}"
 exit ;
 fi
@@ -60,11 +60,11 @@ if [ "${PKG_OK}" == "installed" ]; then
 if [ "$1" == "-R" ] ; then
 GET_INSTALL="NO"
 else
-GET_INSTALL=$(redis-cli get TH3BOSS_INSTALL)
+GET_INSTALL=$(redis-cli get APEXST_INSTALL)
 fi
 if [ "${GET_INSTALL}" == "Yes" ]; then
 echo -e "
-${SMAY}>> ${LSAMAY}Source TH3BOSS${SMAY} is Already Installed ^_^ .\n${CNIL}"
+${SMAY}>> ${LSAMAY}Source APEXST${SMAY} is Already Installed ^_^ .\n${CNIL}"
 sudo chmod +x ./run
 sudo chmod +x ./TG
 sudo ./run
@@ -122,7 +122,7 @@ sudo chmod +x TG
 sudo chmod +x run
 sudo chmod +x ./run
 echo -e "\n
-${SMAY}>> Installation ${LSAMAY}Source TH3BOSS${SMAY} Completed ^_^ .\n
+${SMAY}>> Installation ${LSAMAY}Source APEXST${SMAY} Completed ^_^ .\n
 Now I Have Information For Your Bot  \n
 1- Enter Token Your Bot .
 2- Enter Your UserName Sudo .
